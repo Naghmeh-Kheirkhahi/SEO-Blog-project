@@ -11,27 +11,30 @@
 <body>
     
     <div class="headPart">
-        <div class="row navMenu">
-            <div class="col-4">
-                <!-- icon -->
-
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+        <div class="row navbar">
+            <div class="col-4 menuLogo">
+                <a href="#"><img src="image/brown logo.svg" alt="logo"></a>
             </div>
 
-            <div class="col-8">
+            <div class="col-8 navMenu">
                 <div>
                     <ul>
-                        <li></li>
+                        <li><a href="#" class="home">Home</a></li>
                         <li> <!-- in this part of the menu, we should add a list with 4 rows but first its display = none and then in hover state, it will be blocked   -->
-                            <p></p>
-                            <!-- icon --> 
+                            <a class="dropdown" href="#services">Our Services</a>
+                            <i class='fas fa-angle-down'></i>
+                            <!-- <i class='fas fa-angle-up'></i> -->
+
+                            <ul class="serviceList">
+                                <li><a href="">On-site-SEO</a></li>
+                                <li><a href="">Off-site-SEO</a></li>
+                                <li><a href="">Google Ads campaigns</a></li>
+                                <li><a href="">Site analytics</a></li>
+                            </ul>
                         </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li><a href="#SEO">About Us</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                        <li><a href="#">Blog</a></li> <!-- we need to fill out the href here after making its page -->
                     </ul>
                 </div>
 
@@ -75,7 +78,7 @@
                             <input type="text" placeholder="Email">
                             <input type="text" placeholder="Phone">
 
-                            <button type="submit">Submit</button>
+                            <button id="subBtn" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -90,7 +93,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="row basicInfo">
         <div class="col-4">
@@ -110,7 +112,7 @@
     </div>
 
 
-    <div class="row services">
+    <div id="services" class="row services">
         <div class="col-4">
             <h2>Our Services</h2>
         </div>
@@ -129,7 +131,7 @@
     </div>
     
 
-    <div class="row SEOteam">
+    <div id="SEO" class="row SEOteam">
         <div class="col-5">
             <h2>A SEO Dream Team</h2>
         </div>
@@ -239,7 +241,7 @@
     </div>
     
 
-    <div class="FAQ">
+    <div id="FAQ" class="FAQ">
         <h2>FAQ</h2>
 
         <div>
@@ -294,7 +296,6 @@
                 <p></p>
 
                 <p></p>
-
                 <a href="">
                     <p>Read More</p>
                     <!-- an arrow icon -->
@@ -374,6 +375,6 @@
             <p></p>
         </div>
     </footer>
-
+    
 </body>
 </html>

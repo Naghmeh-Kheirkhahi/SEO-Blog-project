@@ -5,3 +5,101 @@
     font-family: sans-serif;
 }
 
+
+
+button { /* don not forget the action this button needs to do in js */
+    color: white;
+    background-color: rgb(75 202 120);
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    padding: 0.8rem 2.8rem;
+    border: 1px solid rgb(75 202 120);
+    border-radius: 30px !important;
+}
+
+button:hover {
+    background-color: rgb(62, 166, 98);
+    cursor: pointer;
+}
+
+#subBtn { 
+    padding: 0.8rem 5rem; 
+    /* only for the Submit button */
+}
+
+
+
+
+.headPart {
+    background-image: url(image/woman.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* max-width: 100%; or if it doesnt work, use the next command to remove the margin made by the row class*/
+    overflow-x: hidden;
+}
+
+
+
+.navbar {
+    padding: 1rem 1.5rem !important;
+    /* position: sticky;
+    background-color: #333333; */
+}
+
+.menuLogo img {
+    width: 35%;
+}
+
+.navMenu {
+    display: flex;   
+    justify-content: space-between; 
+    text-align: center;
+    align-items: center;
+}
+
+.navMenu ul {
+    display: flex;
+    list-style: none;
+    padding-top: 1.5rem;
+}
+
+.navMenu li {
+    padding-left: 4rem;
+}
+
+.navMenu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navMenu li i {
+    color: white;
+    font-size: 1rem;
+}
+
+.home {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+}
+
+/* a class for underline of the li s  but with animation and make a dropdown list for one of them */
+/* all the states must be done in hover mode */
+
+.serviceList {
+    list-style: none;
+    background-color: white;
+    flex-direction: column;
+}
+
+.serviceList li {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+.serviceList li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
