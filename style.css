@@ -247,7 +247,7 @@ button:hover {
 
 #services {
     text-align: center;
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(230, 230, 230);
     padding: 6rem 2rem 0 2rem;
 }
 
@@ -258,19 +258,15 @@ button:hover {
 
 #services a {
     text-decoration: none;
-}
+} /* #services a:hover {to change the img s from black to green , we need to use JS} */
 
 #services img {
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
 }
 
-/* #services a:hover {
- to change the img s from black to green , we need to use JS
-} */
-
 #services p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-top: 0.5rem;
     color: black;
 }
@@ -281,13 +277,39 @@ button:hover {
 
 
 
+/* our SEO team part */
 
-
-
-
-
+#SEOteam {
+    padding: 6rem 2rem 4rem 2rem;
+}
 
 #SEOteam h2 {
     font-size: 3rem;
     font-weight: bold;
+    text-align: center;
+}
+
+#SEOteam p {
+    font-size: 1.3rem;
+}
+
+#SEOteam video {
+    width: 90%;
+}
+
+
+/* the mission part */
+
+.mission {
+    padding: 6rem 20rem 4rem 20rem;
+    text-align: center;
+}
+
+.msTitle {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.msText {
+    font-size: 1.4rem;
 }
