@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    overflow-x: hidden;
+    /* use overflow-x: hidden; or max-width: 100%; to remove the margin made by the row class*/
 }
 
 
 
-button { /* don not forget the action this button needs to do in js */
+button { /* do not forget the action this button needs to do in js */
     color: white;
     background-color: rgb(75 202 120);
     font-size: 1.2rem !important;
@@ -34,16 +36,16 @@ button:hover {
     background-image: url(image/woman.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* max-width: 100%; or if it doesnt work, use the next command to remove the margin made by the row class*/
-    overflow-x: hidden;
 }
 
 
 
 .navbar {
-    padding: 1rem 1.5rem !important;
-    /* position: sticky;
-    background-color: #333333; */
+    padding: 0.5rem 1.5rem !important;
+    position: fixed !important;
+    right: 0; 
+    left: 0;
+    /* background-color: #333333; asa it is scrolled*/
 }
 
 .menuLogo img {
@@ -57,25 +59,26 @@ button:hover {
     align-items: center;
 }
 
-.navMenu ul {
+.menuList {
     display: flex;
     list-style: none;
     padding-top: 1.5rem;
 }
 
-.navMenu li {
+.menuList li {
     padding-left: 4rem;
 }
 
-.navMenu li a {
+.menuList li a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
 }
 
-.navMenu li i {
+.menuList li i {
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
 }
 
 .home {
@@ -83,23 +86,203 @@ button:hover {
     padding-bottom: 0.5rem;
 }
 
-/* a class for underline of the li s  but with animation and make a dropdown list for one of them */
-/* all the states must be done in hover mode */
+.slowUnderline a {
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.slowUnderline a:after {
+    display:block;
+    content: '';
+    /* position: absolute; */
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid white;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-out;
+    transform-origin: bottom left;
+}
+
+.slowUnderline a:hover:after { 
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* serviceList is a class with a dropdown list for the second li */
 
 .serviceList {
+    display: flex;
     list-style: none;
     background-color: white;
     flex-direction: column;
+    text-align: left;
+    margin-left: 3rem;
+    width: 100%;
+    display: none !important;
 }
 
-.serviceList li {
-    padding: 0.5rem;
-    border-bottom: 1px solid rgb(155, 155, 155);
-}
 
-.serviceList li a {
+/* .serviceList a {
     text-decoration: none;
-    font-size: 1.2rem;
-    color: black;
+    font-size: 1.1rem !important;
+    color: #333333 !important;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(208, 208, 208);
 }
 
+.serviceList a:hover {
+    color: white !important;
+    background-color: #333333;
+    border-bottom: 1px solid  #333333;
+} */
+
+
+
+
+
+/* the downpart of the menu */
+
+.registerPart {
+    padding: 15rem 5rem 10rem 5rem;
+}
+
+.registerPart h1 {
+    font-size: 4.5rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+    text-shadow: 2px 1px 0 #272727;;
+}
+
+.description {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+
+.registerIcons {
+    display: flex;
+    padding-top: 5rem;
+}
+
+.registerIcons p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.airForceDrop {
+    width: 95%;
+    height: 95%;
+}
+
+.salesForce {
+    width: 50%;
+    height: 100%;
+}
+
+.airForceDrop:hover {
+    width: 100%;
+    height: 100%;
+    transition: 500ms ease-in-out;
+}
+
+.salesForce:hover {
+    width: 53%;
+    transition: 500ms ease-in-out;
+}
+
+
+.registerForm {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3rem 0;
+    margin-left: 7rem;
+}
+
+.registerForm h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 0 2rem ;
+}
+
+.registerForm p {
+    font-size: 1.2rem;
+    color: rgb(160, 160, 160);
+    padding: 0 2rem 1rem 2rem ;
+}
+
+.registerForm form {
+    text-align: center;
+}
+
+.registerForm form input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 75%;
+}
+
+
+/* the part under the menu part about basic information */
+
+.basicInfo {
+    padding: 3rem 6rem;
+    text-align: center;
+}
+
+.bigPart {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-bottom: -1rem;
+}
+
+.smallPart {
+    color: rgb(130, 130, 130);
+    font-size: 1.2rem;
+}
+
+
+/* our services part */
+
+#services {
+    text-align: center;
+    background-color: rgb(222, 222, 222);
+    padding: 6rem 2rem 0 2rem;
+}
+
+#services h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#services a {
+    text-decoration: none;
+}
+
+#services img {
+    width: 40%;
+    height: 40%;
+}
+
+/* #services a:hover {
+    color: green;
+} */
+
+#services p {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+#SEOteam h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}

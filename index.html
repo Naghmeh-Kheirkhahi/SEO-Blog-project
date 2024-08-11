@@ -18,23 +18,24 @@
 
             <div class="col-8 navMenu">
                 <div>
-                    <ul>
+                    <ul class="menuList">
                         <li><a href="#" class="home">Home</a></li>
-                        <li> <!-- in this part of the menu, we should add a list with 4 rows but first its display = none and then in hover state, it will be blocked   -->
-                            <a class="dropdown" href="#services">Our Services</a>
-                            <i class='fas fa-angle-down'></i>
-                            <!-- <i class='fas fa-angle-up'></i> -->
+                        <li class="slowUnderline"> <!-- in this part of the menu, we should add a list with 4 rows but first its display = none and then in hover state, it will be blocked   -->
+                            <a href="#services">Our Services
+                                <i class='fas fa-angle-down'></i>
+                                <!-- <i class='fas fa-angle-up'></i> -->
+                            </a>
 
-                            <ul class="serviceList">
-                                <li><a href="">On-site-SEO</a></li>
-                                <li><a href="">Off-site-SEO</a></li>
-                                <li><a href="">Google Ads campaigns</a></li>
-                                <li><a href="">Site analytics</a></li>
-                            </ul>
+                            <div class="serviceList"> <!-- the dropdown list -->
+                                <a href="#SEO1">On-site-SEO</a>
+                                <a href="#SEO2">Off-site-SEO</a>
+                                <a href="#googleAds">Google Ads campaigns</a>
+                                <a href="#googleAnalytics">Site analytics</a>
+                            </div>
                         </li>
-                        <li><a href="#SEO">About Us</a></li>
-                        <li><a href="#FAQ">FAQ</a></li>
-                        <li><a href="#">Blog</a></li> <!-- we need to fill out the href here after making its page -->
+                        <li class="slowUnderline"><a href="#SEOteam">About Us</a></li>
+                        <li class="slowUnderline"><a href="#FAQ">FAQ</a></li>
+                        <li class="slowUnderline"><a href="#">Blog</a></li> <!-- we need to fill out the href here after making its page -->
                     </ul>
                 </div>
 
@@ -44,94 +45,110 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-7">
-                <h1></h1>
-                <p></p>
+        <div class="row registerPart"> <!-- the downpart of the menu  -->
+            <div class="col-7 text-white pt-5">
+                <h1><u>Attract</u>, <u>convert</u> & get found on Google</h1>
+                <p class="description">Turn your site to a Google favorite, rank higher in SERPs, 
+                and convert more leads on your site. It all starts with a free audit.</p>
 
-                <div>
-                    <div>
-                        <p></p>
+                <div class="row registerIcons">
+                    <div class="col-3">
+                        <p>Trusted by 35,000 + companies</p>
                     </div>
 
-                    <div>
-                        <!-- icon <i class="fa-brands fa-airbnb"></i> -->
-                        <p></p>
-                    </div>
-
-                    <div>
-                        <!-- icon <i class="fa-brands fa-salesforce"></i> or use the PNG pic in the image folder-->
-                    </div>
-
-                    <div>
-                        <!-- icon <i class="fa-brands fa-atlassian"></i> -->
-                        <p></p>
-                    </div>
-                    
-                    <div>
-                        <!-- icon <i class="fa-brands fa-dropbox"></i> -->
-
-                        <p></p>
-
-                        <form action="">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Phone">
-
-                            <button id="subBtn" type="submit">Submit</button>
-                        </form>
+                    <div class="col-9">
+                        <div class="row pt-2 ps-4">
+                            <div class="col-3">
+                                <a href="#"><img class="airForceDrop" src="image/airbnb-160w.svg" alt=""></a>
+                            </div>
+    
+                            <div class="col-3">
+                                <a href="#"><img class="salesForce" src="image/Logo_SalesForce.png" alt=""></a>
+                            </div>
+    
+                            <div class="col-3">
+                                <a href="#"><img class="airForceDrop" src="image/Atlassian-160w.svg" alt=""></a>
+                            </div>
+    
+                            <div class="col-3">
+                                <a href="#"><img class="airForceDrop" src="image/Dropbox-160w.svg" alt=""></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="col-5">
-                <h3></h3>
+            <div class="col-4 registerForm">
+                <h3>Book an Audit</h3>
 
-                <p></p>
+                <p>Get your free 1-hour site audit plus a personalized SEO checklist.</p>
 
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <br>
+                    <input type="text" placeholder="Email">
+                    <br>
+                    <input type="text" placeholder="Phone">
+                    <br>
+                    <button id="subBtn" type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>
 
     <div class="row basicInfo">
         <div class="col-4">
-            <p></p>
-            <p></p>
+            <p class="bigPart">10K</p>
+            <p class="smallPart">Happy clients to date</p>
         </div>
 
         <div class="col-4">
-            <p></p>
-            <p></p>
+            <p class="bigPart">#1</p>
+            <p class="smallPart">SEO consultant in Maryland</p>
         </div>
 
         <div class="col-4">
-            <p></p>
-            <p></p>
+            <p class="bigPart">$25</p>
+            <p class="smallPart">Basic audit price</p>
         </div>
     </div>
 
 
-    <div id="services" class="row services">
+    <div id="services" class="row">
         <div class="col-4">
             <h2>Our Services</h2>
         </div>
 
         <div class="col-8">
-            <div>
-                <div></div><!-- <i class="fa fa-search"></i> from W3school -->
-                <div></div><!-- <i class='far fa-comment-alt'></i> from W3school -->
+            <div class="row">
+                <div class="col-6">
+                    <a href="#SEO1"><img src="image/on-site-seo.svg" alt="SEO site"></a>
+                    <p>On-site SEO</p>
+                </div><!-- <i class="fa fa-search"></i> from W3school -->
+
+                <div class="col-6">
+                    <a href="#SEO2"><img src="image/off-site-seo.svg" alt="SEO site"></a>
+                    <p>Off-site SEO</p>
+                </div><!-- <i class='far fa-comment-alt'></i> from W3school -->
             </div>
 
-            <div>
-                <div></div><!-- <i class='fas fa-ad'></i> from W3school -->
-                <div></div><!-- <i class="fa fa-bar-chart"></i> from W3school -->
+            <div class="row">
+                <div class="col-6">
+                    <a href="#googleAds"><img src="image/googleads1.svg" alt="google ads"></a>
+                    <p>Google Ads campaigns</p>
+                </div><!-- <i class='fas fa-ad'></i> from W3school -->
+                
+                <div class="col-6">
+                    <a href="#googleAnalytics"><img src="image/google-analytics.svg" alt="google analytics"></a>
+                    <p>Google Analytics</p>
+                </div><!-- <i class="fa fa-bar-chart"></i> from W3school -->
             </div>
         </div>
     </div>
     
 
-    <div id="SEO" class="row SEOteam">
+    <div id="SEOteam" class="row">
         <div class="col-5">
             <h2>A SEO Dream Team</h2>
         </div>
@@ -156,9 +173,9 @@
     </div>
     
 
-    <div class="row SEOsite1">
+    <div id="SEO1" class="row">
         <div class="col-5">
-            <h3></h3>
+            <h3>On-site SEO</h3>
             <p></p>
             <br>
             <p></p>
@@ -171,13 +188,13 @@
     </div>
     
 
-    <div class="row SEOsite2">
+    <div id="SEO2" class="row">
         <div class="col-5">
             <img src="" alt="SEO Site">
         </div>
 
         <div class="col-5">
-            <h3></h3>
+            <h3>Off-site SEO</h3>
             <p></p>
             <br>
             <p></p>
@@ -186,9 +203,9 @@
     </div>
     
 
-    <div class="row googleAds">
+    <div id="googleAds" class="row googleAds">
         <div class="col-5">
-            <h3></h3>
+            <h3>Google Ads campaigns</h3>
             <p></p>
             <br>
             <p></p>
@@ -203,13 +220,13 @@
     </div>
     
 
-    <div class="row googleAnalytics">
+    <div id="googleAnalytics" class="row googleAnalytics">
         <div class="col-5">
             <img src="" alt="google Analytics">
         </div>
 
         <div class="col-5">
-            <h3></h3>
+            <h3>Google Analytics</h3>
             <p></p>
             <br>
             <p></p>
@@ -219,8 +236,8 @@
     
 
     <div class="comments">
-        <p></p>
-        <p></p>
+        <p>What people say about us?</p>
+        <p>Don't just take it from us</p>
 
         <div class="row">
             <div class="col-4">
@@ -229,14 +246,32 @@
                 <!-- 4 stars icon 
                  <i class="material-icons">star</i> from W3School-->
 
-                <p><b></b></p>
+                <p><b>Henry Pasternac</b></p>
 
-                <p><i></i></p>
+                <p><i>“The Rank team helped us shape up our site SEO and come up with an effective content strategy”</i></p>
             </div>
 
-            <div></div>
+            <div class="col-4">
+                <img src="" alt="">
 
-            <div></div>
+                <!-- 4 stars icon 
+                 <i class="material-icons">star</i> from W3School-->
+
+                <p><b>Frank Revenstein</b></p>
+
+                <p><i>“Within 4 months, we managed to beat our main local competitor on Google SERPs”</i></p>
+            </div>
+
+            <div class="col-4">
+                <img src="" alt="">
+
+                <!-- 4 stars icon 
+                 <i class="material-icons">star</i> from W3School-->
+
+                <p><b>Fernanda Bapo</b></p>
+
+                <p><i>“My beauty salon business reached Google's #1 search results for local searches”</i></p>
+            </div>
         </div>
     </div>
     
@@ -245,22 +280,22 @@
         <h2>FAQ</h2>
 
         <div>
-            <p><b></b></p>
+            <p><b>Is the audit you're offering really free?</b></p>
             <a href="#">+</a>
         </div>
 
         <div>
-            <p><b></b></p>
+            <p><b>What sectors do you specialize in?</b></p>
             <a href="#">+</a>
         </div>
 
         <div>
-            <p><b></b></p>
+            <p><b>Which digital services do you offer?</b></p>
             <a href="#">+</a>
         </div>
 
         <div>
-            <p><b></b></p>
+            <p><b>Why should I choose Rank Consultant?</b></p>
             <a href="#">+</a>
         </div>
     </div>
@@ -269,17 +304,17 @@
     <div class="news">
         <h2>Recent news & SEO trends</h2>
 
-        <p></p>
+        <p>Latest updates from the industry</p>
 
         <div class="row">
             <div class="col-4">
                 <img src="" alt="">
 
-                <h3></h3>
+                <h3><a href="">Top 5 SEO Best Practices</a></h3>
 
-                <p></p>
+                <p>By Designers Templates • 24 Jul, 2022</p>
 
-                <p></p>
+                <p>When it comes to SEO, there isn't a magic formula to instantly send your site off to the #1</p>
 
                 <a href="">
                     <p>Read More</p>
@@ -291,11 +326,12 @@
             <div class="col-4">
                 <img src="" alt="">
 
-                <h3></h3>
+                <h3><a href="">Why SEO Loves Branding</a></h3>
 
-                <p></p>
+                <p>By Designers • 29 Jun, 2022</p>
 
-                <p></p>
+                <p>When it comes to SEO, there isn't a magic formula to instantly send your site off to the #1</p>
+
                 <a href="">
                     <p>Read More</p>
                     <!-- an arrow icon -->
@@ -305,11 +341,11 @@
             <div class="col-4">
                 <img src="" alt="">
 
-                <h3></h3>
+                <h3>So What's SEO, Anyway?</h3>
 
-                <p></p>
+                <p>By John Miller • 29 Jun, 2022</p>
 
-                <p></p>
+                <p>When it comes to SEO, there isn't a magic formula to instantly send your site off to the #1</p>
 
                 <a href="">
                     <p>Read More</p>
@@ -332,12 +368,7 @@
         <div class="row">
             <div class="col-5">
                 <div>
-                    <!-- icon is a pic-->
-
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                    </div>
+                    <img src="image/black logo.svg" alt="">
                 </div>
 
                 <div>
@@ -353,16 +384,16 @@
             <div class="col-7">
                 <div class="row">
                     <div class="col-7">
-                        <p></p>
-                        <p></p>
+                        <p>10 Street Name, City Name Country, Zip Code555-555-5555</p>
+                        <p>myemail@mailservice.com</p>
                     </div>
 
                     <div class="col-5">
                         <ul>
-                            <li><a href="">Our services</a></li>
-                            <li><a href="">About us</a></li>
-                            <li><a href="">FAQ</a></li>
-                            <li><a href="">Blog</a></li>
+                            <li><a href="#services">Our services</a></li>
+                            <li><a href="#SEOteam">About us</a></li>
+                            <li><a href="#FAQ">FAQ</a></li>
+                            <li><a href="#">Blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -370,9 +401,7 @@
         </div>
 
         <div>
-            <!-- icon there is pic called c logo
-             <i class='far fa-copyright'></i> from W3School-->
-            <p></p>
+            <p>© 2024 This is a lead generation Landing page</p>
         </div>
     </footer>
     
