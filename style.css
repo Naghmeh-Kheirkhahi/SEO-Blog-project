@@ -266,12 +266,17 @@ button:hover {
 }
 
 /* #services a:hover {
-    color: green;
+ to change the img s from black to green , we need to use JS
 } */
 
 #services p {
     font-size: 1.5rem;
     padding-top: 0.5rem;
+    color: black;
+}
+
+#services p:hover {
+    color: rgb(0, 181, 97);
 }
 
 
