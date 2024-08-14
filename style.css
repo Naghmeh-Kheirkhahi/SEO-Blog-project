@@ -280,7 +280,8 @@ button:hover {
 /* our SEO team part */
 
 #SEOteam {
-    padding: 6rem 2rem 4rem 2rem;
+    padding: 6rem 2rem;
+    justify-content: space-between;
 }
 
 #SEOteam h2 {
@@ -301,7 +302,7 @@ button:hover {
 /* the mission part */
 
 .mission {
-    padding: 6rem 20rem 4rem 20rem;
+    padding: 2rem 20rem;
     text-align: center;
 }
 
@@ -317,32 +318,23 @@ button:hover {
 
 /* the on-site, off-site, google ads, and google analytics parts */
 
-#SEO1 {
-    padding: 6rem 2rem 4rem 2rem;
+.SEOParts {
+    padding: 6rem;
+    justify-content: space-between;
 }
 
-
-
-
-
-
-
-#SEO2 {
-    padding: 6rem 2rem 4rem 2rem;
+.SEOParts h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 1rem;
 }
 
-
-
-
-
-#googleAds {
-    padding: 6rem 2rem 4rem 2rem;
+.SEOParts p {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
 }
 
-
-
-
-
-#googleAnalytics {
-    padding: 6rem 2rem 4rem 2rem;
+.SEOParts img {
+    width: 100%;
+    height: 100%;
 }
