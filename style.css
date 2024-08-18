@@ -415,7 +415,7 @@ button:hover {
 
 .questions span {
     font-size: 2.3rem;
-    color: rgb(0, 181, 97);
+    color: rgb(33, 206, 125);
     cursor: pointer;
 }
 
@@ -462,6 +462,7 @@ button:hover {
     font-weight: bold;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+    color: black;
 }
 
 .datePic {
