@@ -10,7 +10,6 @@
 
 
 button { /* do not forget the action this button needs to do in js */
-    color: white;
     background-color: rgb(75 202 120);
     font-size: 1.2rem !important;
     font-weight: bold;
@@ -19,13 +18,19 @@ button { /* do not forget the action this button needs to do in js */
     border-radius: 30px !important;
 }
 
+button a {
+    color: white;
+    text-decoration: none;
+}
+
 button:hover {
     background-color: rgb(62, 166, 98);
-    cursor: pointer;
+    border: 1px solid rgb(62, 166, 98);
 }
 
 #subBtn { 
     padding: 0.8rem 5rem; 
+    color: white;
     /* only for the Submit button */
 }
 
@@ -337,4 +342,197 @@ button:hover {
 .SEOParts img {
     width: 100%;
     height: 100%;
+}
+
+
+/* the comments part */
+
+.comments {
+    padding: 6rem;
+    text-align: center;
+}
+
+.cmTitle {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cmText {
+    font-size: 1.4rem;
+}
+
+.comments span {
+    color: rgb(70, 70, 70);
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.comments img {  /* .cmPeople img can be written */
+    border-radius: 50%;
+    width: 25%;
+    height: 35%;
+    margin-bottom: 0.5rem;
+}
+
+.cmPeople {
+    padding: 0 2rem;
+}
+
+.cmPeople p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+
+/* the FAQ part */
+
+.mainFAQ {
+    padding: 2rem 6rem 6rem 6rem;
+}
+
+.FAQ {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 8rem 10rem 5rem 10rem;
+}
+
+.FAQ h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1.5rem 0 1.5rem;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.questions p {
+    font-size: 1.3rem;
+}
+
+.questions span {
+    font-size: 2.3rem;
+    color: rgb(0, 181, 97);
+    cursor: pointer;
+}
+
+.answer {
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    font-size: 1.2rem;
+    display: none;
+}
+
+
+
+/* the news part */
+
+.news {
+    padding: 3rem 6rem 4rem 6rem;
+}
+
+.news h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.newsText {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.news img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform .3s;
+    width: 100%;
+    height: 50%;
+}
+
+.news img:hover {
+    transform: scale(1.1);
+}
+
+.news h3 {
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.datePic {
+    color: rgb(170, 170, 170);
+}
+
+.discPic {
+    font-size: 1.2rem;
+}
+
+.readMore {
+    display: flex;
+    color: rgb(33, 206, 125);
+}
+
+/* the footer part */
+
+footer {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 8rem 6rem 3rem 6rem;
+}
+
+footer h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.footerInfo {
+    padding-top: 10rem;
+}
+
+footer img {
+    width: 40%;
+}
+
+.contact p {
+    font-size: 1.4rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    padding: 0.5rem 0;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.footerIcons {
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding-bottom: 1.5rem;
+}
+
+.footerIcons i{
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.footerIcons :not(:first-child) {
+    padding-left: 1rem;
+}
+
+.footerEnd {
+    padding-top: 2rem;
+    font-size: 1.2rem;
 }
