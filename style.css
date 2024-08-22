@@ -407,7 +407,7 @@ button:hover {
 
 .container {
     background-color: rgb(230, 230, 230);
-    padding: 8rem 0 6rem 0;
+    padding: 8rem 0;
     border-radius: 10px;
 }
 
@@ -423,12 +423,13 @@ button:hover {
 }
 
 .accordion .accordion-item {
-    border-bottom: 1px solid #bbbbbb;
-    background-color: #bbbbbb;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 !important;
 }
  
 .accordion .accordion-item button[aria-expanded='true'] {
-    border-bottom: 1px solid #bbbbbb;
+    border-bottom: 1px solid rgb(175, 175, 175);
     border-radius: 0 !important;
 }
   
@@ -455,7 +456,7 @@ button:hover {
 .accordion button:focus::after {
     cursor: pointer;
     color: rgb(75 202 120);
-    border: 1px solid #d5d5d5;
+    border: 1px solid rgb(175, 175, 175);
 }
   
 .accordion button .accordion-title {
@@ -520,7 +521,7 @@ button:hover {
 .accordion .accordion-content p {
     font-size: 1.2rem;
     color: black;
-    padding: 0 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
 }
 
 
