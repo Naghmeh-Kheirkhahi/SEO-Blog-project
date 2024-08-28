@@ -9,7 +9,7 @@
 
 
 
-button { /* do not forget the action this button needs to do in js */
+button {
     background-color: rgb(75 202 120);
     font-size: 1.2rem !important;
     font-weight: bold;
@@ -55,14 +55,14 @@ button:hover {
 }
 
 .scrolled {
-    background-color: black;
+    background-color: #333333;
 }
 
 .scrolled a {
     color: white !important;
 }
 
-.menuLogo img {
+.navbar img {
     width: 35%;
 }
 

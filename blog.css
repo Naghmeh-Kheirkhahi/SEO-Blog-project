@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    /* use overflow-x: hidden; or max-width: 100%; to remove the margin made by the row class*/
+}
+
+
+
+button {
+    background-color: rgb(75 202 120);
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    padding: 0.8rem 2.8rem;
+    border: 1px solid rgb(75 202 120);
+    border-radius: 30px !important;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(62, 166, 98);
+    border: 1px solid rgb(62, 166, 98);
+}
+
+
+/* the menu bar part */
+
+.navbar {
+    padding: 0.5rem 1.5rem !important;
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #333333;
+}
+
+
+.navbar img {
+    width: 35%;
+    transition: 500ms ease-in-out;
+}
+
+.scrolled img {
+    width: 30%;
+    transition: 500ms ease-in-out;
+}
+
+.navMenu {
+    display: flex;   
+    justify-content: space-between; 
+    text-align: center;
+    align-items: center;
+}
+
+.menuList {
+    display: flex;
+    list-style: none;
+    padding-top: 1.5rem;
+}
+
+.menuList li {
+    padding-left: 4rem;
+}
+
+.menuList li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.menuList li i {
+    color: white;
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+}
+
+.home {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+}
+
+.slowUnderline a {
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.slowUnderline a:after {
+    display:block;
+    content: '';
+    /* position: absolute; */
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid white;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-out;
+    transform-origin: bottom left;
+}
+
+.slowUnderline a:hover:after { 
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* serviceList is a class with a dropdown list for the second li */
+
+.serviceList {
+    display: flex;
+    list-style: none;
+    background-color: white;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 2.5rem;
+    width: 100%;
+    /* z-index: 1; */
+    display: none !important;
+}
+
+
+.serviceList a {
+    text-decoration: none;
+    font-size: 1.1rem !important;
+    color: #333333 !important;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.serviceList a:hover {
+    color: white !important;
+    background-color: #333333;
+    border-bottom: 1px solid  #333333;
+}
+
+
+
+
+
+
+/* the footer part */
+
+footer {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 8rem 6rem 3rem 6rem;
+}
+
+footer h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.footerInfo {
+    padding-top: 10rem;
+}
+
+footer img {
+    width: 40%;
+}
+
+.contact p {
+    font-size: 1.4rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    padding: 0.5rem 0;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.footerIcons {
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding-bottom: 1.5rem;
+}
+
+.footerIcons i{
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.footerIcons :not(:first-child) {
+    padding-left: 1rem;
+}
+
+.footerEnd {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
