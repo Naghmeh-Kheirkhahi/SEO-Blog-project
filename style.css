@@ -131,13 +131,14 @@ button:hover {
     background-color: white;
     flex-direction: column;
     text-align: left;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     width: 100%;
+    /* z-index: 1; */
     display: none !important;
 }
 
 
-/* .serviceList a {
+.serviceList a {
     text-decoration: none;
     font-size: 1.1rem !important;
     color: #333333 !important;
@@ -149,7 +150,7 @@ button:hover {
     color: white !important;
     background-color: #333333;
     border-bottom: 1px solid  #333333;
-} */
+}
 
 
 
@@ -278,7 +279,7 @@ button:hover {
 
 #services a {
     text-decoration: none;
-} /* #services a:hover {to change the img s from black to green , we need to use JS} */
+}
 
 #services img {
     width: 35%;
