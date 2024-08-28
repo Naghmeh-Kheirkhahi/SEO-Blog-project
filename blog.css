@@ -118,9 +118,12 @@ button:hover {
     text-align: left;
     margin-left: 2.5rem;
     width: 100%;
-    /* z-index: 1; */
-    display: none !important;
+    display: none;
 }
+
+/* #services:hover .serviceList{
+    display: block;
+} */
 
 
 .serviceList a {
@@ -137,6 +140,105 @@ button:hover {
     border-bottom: 1px solid  #333333;
 }
 
+
+
+/* the search part */
+
+.search {
+    padding: 12rem 6rem 6rem 6rem;
+}
+
+.search h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+.searchBar {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 30px;
+    padding: 0 1rem;
+    width: 25%;
+}
+
+.searchBar input {
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.searchBar i {
+    font-size: 1.2rem;
+}
+
+#searchBtn {
+    background-color: white;
+    border: white;
+}
+
+
+
+
+
+/* the blogs part */
+
+.blogs {
+    padding: 2rem 6rem 0 6rem;
+}
+
+.neccMargin {
+    margin-top: -5rem !important;
+}
+
+.postRight {
+    padding-left: 1rem !important;
+}
+
+.postLeft {
+    padding-right: 1rem !important;
+}
+
+.post {
+    overflow: hidden;
+}
+
+.postImage {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 40vh;
+    background-image: url("image/news1.jpg");
+    background-size: 100% 40vh;
+    transition: 1s all;
+}
+
+.postImage:hover {
+    transform: scale(1.1);
+}
+
+
+
+.blogs h3 {
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    color: black;
+}
+
+.datePic {
+    color: rgb(170, 170, 170);
+}
+
+.discPic {
+    font-size: 1.2rem;
+}
+
+.readMore {
+    display: flex;
+    color: rgb(33, 206, 125);
+}
 
 
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Rank Consultant Blog</title>
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
     
@@ -19,7 +20,7 @@
             <div>
                 <ul class="menuList">
                     <li><a href="index.html" class="home">Home</a></li>
-                    <li class="slowUnderline"> <!-- in this part of the menu, we should add a list with 4 rows but first its display = none and then in hover state, it will be blocked   -->
+                    <li id="services" class="slowUnderline"> <!-- in this part of the menu, we should add a list with 4 rows but first its display = none and then in hover state, it will be blocked   -->
                         <a href="#services">Our Services
                             <i class='fas fa-angle-down'></i>
                             <!-- <i class='fas fa-angle-up'></i> -->
@@ -46,31 +47,76 @@
 
 
 
-    <div style="height: 500px;">
+    <div class="search">
         <h2>Rank's SEO blog</h2>
+        
+        <br>
 
-        <!-- search bar -->
+        <div class="searchBar">
+            <input id="searchBar" 
+               type="text" name="search" 
+               placeholder="Search the blog">
+            <button id="searchBtn"><i class="fa fa-search"></i></button>
+        </div>
     </div>
 
-    <div>
+    <div class="blogs">
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 postLeft">
+                <div class="post">
+                    <a href="" class="text-decoration-none">
+                        <div class="postImage"></div>
+                        <h3>Top 5 SEO Best Practices</h3>
+                    </a>
 
+                    <p class="datePic">By Designers Templates • 24 Jul, 2022</p>
+
+                    <p class="discPic">When it comes to SEO, there isn't a magic formula to instantly send your site off to the #1</p>
+
+                    <a href="" class="readMore"><b>Read More</b>→</a>
+                </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 postRight">
+                <a href="" class="text-decoration-none">
+                    <img src="image/news2.jpg" alt="">
+                    <h3>Why SEO Loves Branding</h3>
+                </a>
 
+                <p class="datePic">By Designers • 29 Jun, 2022</p>
+
+                <p class="discPic">When it comes to SEO, there isn't a magic formula to instantly send your site off to the #1</p>
+
+                <a href="" class="readMore"><b>Read More</b>→</a>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-6">
+        <div class="row neccMargin">
+            <div class="col-6 postLeft">
+                <a href="" class="text-decoration-none">
+                    <img src="image/news3.jpg" alt="">
+                    <h3>So What's SEO, Anyway?</h3>
+                </a>
 
+                <p class="datePic">By John Miller • 29 Jun, 2022</p>
+
+                <p class="discPic">When it comes to SEO, there isn't a magic formula to instantly send your site off to the #1</p>
+
+                <a href="" class="readMore"><b>Read More</b>→</a>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 postRight">
+                <a href="" class="text-decoration-none">
+                    <img src="image/news4.jpg" alt="">
+                    <h3>SEO & Influencers</h3>
+                </a>
 
+                <p class="datePic">By John Miller • 29 Jun, 2022</p>
+
+                <p class="discPic">When it comes to SEO, there isn't a magic formula to instantly send your site off to the #1 search result on Google. But there are some basic</p>
+
+                <a href="" class="readMore"><b>Read More</b>→</a>
             </div>
         </div>
 
