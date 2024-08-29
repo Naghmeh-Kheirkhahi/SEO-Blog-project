@@ -530,7 +530,7 @@ button:hover {
 /* the news part */
 
 .news {
-    padding: 3rem 6rem 4rem 6rem;
+    padding: 3rem 6rem 8rem 6rem;
 }
 
 .news h2 {
@@ -542,20 +542,55 @@ button:hover {
 .newsText {
     font-size: 1.4rem;
     text-align: center;
-    padding-bottom: 1.5rem;
+    padding-bottom: 4rem;
 }
 
-.news img {
+
+
+.newsImages {
+    overflow: hidden;
+    height: 40vh;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    transition: transform .3s;
-    width: 100%;
-    height: 50%;
 }
 
-.news img:hover {
+.image1 {
+    width: 100%;
+    height: 40vh;
+    background-image: url("image/news1.jpg");
+    background-size: 100% 40vh;
+    transition: 1s all;
+}
+
+.image1:hover {
     transform: scale(1.1);
 }
+
+.image2 {
+    width: 100%;
+    height: 40vh;
+    background-image: url("image/news2.jpg");
+    background-size: 100% 40vh;
+    transition: 1s all;
+}
+
+.image2:hover {
+    transform: scale(1.1);
+}
+
+.image3 {
+    width: 100%;
+    height: 40vh;
+    background-image: url("image/news3.jpg");
+    background-size: 100% 40vh;
+    transition: 1s all;
+}
+
+.image3:hover {
+    transform: scale(1.1);
+}
+
+
 
 .news h3 {
     font-weight: bold;
@@ -576,6 +611,8 @@ button:hover {
     display: flex;
     color: rgb(33, 206, 125);
 }
+
+
 
 /* the footer part */
 
