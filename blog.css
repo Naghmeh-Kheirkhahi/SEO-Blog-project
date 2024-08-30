@@ -116,7 +116,7 @@ button:hover {
 }
 
 .serviceList {
-    /* display: none; */
+    /* display: none !important; */
     position: fixed;
     background-color: white;
     max-width: 220px;
@@ -127,9 +127,12 @@ button:hover {
     margin-left: 3.5rem;
 }
 
-.show {
-    display: block;
-}
+/* #serviceTitle:hover + .serviceList {
+    display: block !important;
+    display: flex !important;
+}  */
+/* when we want only to show the list by hover not clicking on the options */
+
 
 .serviceList a {
     float: none;
