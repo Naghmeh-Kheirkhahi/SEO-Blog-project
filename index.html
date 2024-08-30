@@ -20,19 +20,23 @@
                 <div>
                     <ul class="menuList">
                         <li><a href="#" class="home">Home</a></li>
-                        <li class="slowUnderline"> <!-- in this part of the menu, we should add a list with 4 rows but first its display = none and then in hover state, it will be blocked   -->
-                            <a href="#services">Our Services
-                                <i class='fas fa-angle-down'></i>
-                                <!-- <i class='fas fa-angle-up'></i> -->
-                            </a>
 
-                            <div class="serviceList"> <!-- the dropdown list -->
+                        <div class="serviceContainer">
+                            <li id="serviceTitle" class="slowUnderline">
+                                <a href="#services">Our Services
+                                    <i class='fas fa-angle-down'></i>
+                                    <!-- <i class='fas fa-angle-up'></i> -->
+                                </a>
+                            </li>
+        
+                            <div id="serviceList" class="serviceList"> <!-- the dropdown list. fix the links -->
                                 <a href="#SEO1">On-site-SEO</a>
                                 <a href="#SEO2">Off-site-SEO</a>
                                 <a href="#googleAds">Google Ads campaigns</a>
                                 <a href="#googleAnalytics">Site analytics</a>
                             </div>
-                        </li>
+                        </div>
+
                         <li class="slowUnderline"><a href="#SEOteam">About Us</a></li>
                         <li class="slowUnderline"><a href="#FAQ">FAQ</a></li>
                         <li class="slowUnderline"><a href="blog.html">Blog</a></li> <!-- we need to fill out the href here after making its page -->
