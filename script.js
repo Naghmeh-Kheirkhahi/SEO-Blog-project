@@ -1,4 +1,6 @@
 
+// when we scroll, the menu changes
+
 window.onscroll = function() {
     var header = document.getElementById("header");
     if (window.pageYOffset > 50) {
@@ -18,7 +20,7 @@ window.onscroll = function() {
 
 
 
-
+// for the button of the register form
 
 let subBtn = document.getElementById('subBtn');
 
@@ -33,6 +35,8 @@ subBtn.addEventListener('click', ()=> {
 
 
 
+
+// for the FAQ part
 
 const items = document.querySelectorAll('.accordion button');
 
@@ -51,3 +55,25 @@ function toggleAccordion() {
 }
 
 items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+
+
+
+// hide and show the drop down list of the services part
+
+window.onmousemove= function(e) {
+
+  let serviceList = document.getElementById('serviceList');
+
+  if (e.target.document.getElementById('serviceTitle')) {
+    
+    serviceList.style.display = 'block';
+    document.querySelectorAll('.serviceContainer i').className = 'fas fa-angle-up';
+    // document.querySelectorAll('.serviceContainer i').style.transition = '300ms all ease';
+
+
+  } else {
+    serviceList.style.display = 'none';
+  }
+}

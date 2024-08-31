@@ -89,11 +89,12 @@ button:hover {
     font-size: 1.2rem;
 }
 
-.menuList li i {
+.menuList i {
     color: white;
     font-size: 0.8rem;
     padding-left: 0.8rem;
 }
+
 
 .home {
     border-bottom: 2px solid white;
@@ -139,8 +140,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-left: 3.5rem;
+    margin-left: 4rem;
 }
+
 
 /* #serviceTitle:hover + .serviceList {
     display: block !important;

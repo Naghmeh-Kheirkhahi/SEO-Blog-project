@@ -31,5 +31,6 @@ searchBar.addEventListener("keypress", function (e){
 })
 
 
+
 // hide and show the drop down list of the services part
 
