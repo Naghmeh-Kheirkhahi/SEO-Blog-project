@@ -1,17 +1,15 @@
 // hide and show the drop down list of the services part
 
 
-let serviceTitle = document.getElementById('serviceTitle');
+let service = document.querySelector('.serviceContainer');
 
-serviceTitle.addEventListener('mouseover' , ()=> {
+service.addEventListener('mouseover' , ()=> {
     
   document.querySelector('.serviceContainer i').className = 'fas fa-angle-up';
 })
 
 
-serviceTitle.addEventListener('mouseout' , ()=> {
+service.addEventListener('mouseout' , ()=> {
     
   document.querySelector('.serviceContainer i').className = 'fas fa-angle-down';
 })
-
-

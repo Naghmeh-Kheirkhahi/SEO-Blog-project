@@ -113,27 +113,19 @@ button:hover {
 
 /* serviceList is a class with a dropdown list for the second li */
 
-.serviceContainer {
-    overflow: hidden;
-}
-
 .serviceList {
-    /* display: none !important; */
+    display: none;
     position: fixed;
     background-color: white;
     max-width: 220px;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-left: 4rem;
 }
 
-/* #serviceTitle:hover + .serviceList {
-    display: block !important;
-    display: flex !important;
-}  */
-/* when we want only to show the list by hover not clicking on the options */
+
+.serviceContainer:hover .serviceList {
+    display: flex;
+    flex-direction: column;
+} 
 
 
 .serviceList a {
@@ -151,6 +143,7 @@ button:hover {
     background-color: #333333;
     border-bottom: 1px solid  #333333;  
 }
+
 
 
 
