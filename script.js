@@ -62,18 +62,17 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
 // hide and show the drop down list of the services part
 
-window.onmousemove= function(e) {
 
-  let serviceList = document.getElementById('serviceList');
+let serviceTitle = document.getElementById('serviceTitle');
 
-  if (e.target.document.getElementById('serviceTitle')) {
+serviceTitle.addEventListener('mouseover' , ()=> {
     
-    serviceList.style.display = 'block';
-    document.querySelectorAll('.serviceContainer i').className = 'fas fa-angle-up';
-    // document.querySelectorAll('.serviceContainer i').style.transition = '300ms all ease';
+  document.querySelector('.serviceContainer i').className = 'fas fa-angle-up';
+})
 
 
-  } else {
-    serviceList.style.display = 'none';
-  }
-}
+serviceTitle.addEventListener('mouseout' , ()=> {
+    
+  document.querySelector('.serviceContainer i').className = 'fas fa-angle-down';
+})
+

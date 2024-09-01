@@ -154,88 +154,110 @@ button:hover {
 
 
 
+/* the post decription */
 
-/* the search part */
+.post {
+    padding: 15rem 10rem 5rem 10rem;
 
-.search {
-    padding: 12rem 6rem 6rem 6rem;
 }
 
-.search h2 {
+.post p:first-child {
+    padding-bottom: 1rem;
+    color: gray;
+    font-size: 1.3rem;
+}
+
+.post h2 {
     font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.post img {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 8rem;
+}
+
+.post p {
+    font-size: 1.2rem;
+    padding-bottom: 1.5rem;
+}
+
+.postTitle {
+    font-size: 2rem !important;
+    padding-bottom: 1.5rem;
+}
+
+.post h3 {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 
-.searchBar {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid rgb(192, 192, 192);
-    border-radius: 30px;
-    padding: 0 1rem;
-    width: 25%;
+
+
+/* the older post */
+
+.olderPost {
+    padding: 0 10rem 4rem 10rem;
 }
 
-.searchBar input {
-    border: none;
-    font-size: 1.2rem;
-    outline: none;
+.olderPost a {
+    font-size: 1.3rem;
+    color: rgb(62, 166, 98);
 }
 
-.searchBar i {
-    font-size: 1.2rem;
+.SocialMedia{
+    text-align: center;
 }
 
-#searchBtn {
-    background-color: white;
-    border: white;
+.SocialMedia a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+#facebook { color: rgb(43, 43, 205);}
+
+#twitter {color: black;}
+
+#linkedin {color: rgb(53, 53, 162);}
+
+#whatsapp {color: rgb(46, 192, 97);}
+
+#email {color: rgb(130, 130, 130);}
+
+
+
+/* the social media icons part */
+
+
+
+
+
+
+
+/* the other posts */
+
+.news {
+    padding: 6rem 10rem 8rem 10rem;
 }
 
 
-
-
-
-/* the blogs part */
-
-.blogs {
-    padding: 2rem 6rem 0 6rem;
-}
-
-.postRight {
-    padding-left: 1rem !important;
-    padding-bottom: 3rem;
-}
-
-.postLeft {
-    padding-right: 1rem !important;
-    padding-bottom: 3rem;
-}
-
-
-.postImages {
+.newsImages {
     overflow: hidden;
-    height: 40vh;
+    height: 30vh;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.image1 {
-    width: 100%;
-    height: 50vh;
-    background-image: url("image/news1.jpg");
-    background-size: 100% 50vh;
-    transition: 1s all;
-}
-
-.image1:hover {
-    transform: scale(1.1);
-}
 
 .image2 {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background-image: url("image/news2.jpg");
-    background-size: 100% 50vh;
+    background-size: 100% 40vh;
     transition: 1s all;
 }
 
@@ -245,9 +267,9 @@ button:hover {
 
 .image3 {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background-image: url("image/news3.jpg");
-    background-size: 100% 50vh;
+    background-size: 100% 40vh;
     transition: 1s all;
 }
 
@@ -257,9 +279,9 @@ button:hover {
 
 .image4 {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background-image: url("image/news4.jpg");
-    background-size: 100% 50vh;
+    background-size: 100% 40vh;
     transition: 1s all;
 }
 
@@ -268,7 +290,8 @@ button:hover {
 }
 
 
-.blogs h3 {
+
+.news h3 {
     font-weight: bold;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
@@ -287,7 +310,6 @@ button:hover {
     display: flex;
     color: rgb(33, 206, 125);
 }
-
 
 
 

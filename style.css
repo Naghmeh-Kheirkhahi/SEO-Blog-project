@@ -36,13 +36,14 @@ button:hover {
 
 
 
-
 .headPart {
     background-image: url(image/woman.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+
+/* the menu part */
 
 .navbar {
     padding: 0.5rem 1.5rem !important;
@@ -124,30 +125,29 @@ button:hover {
 }
 
 
-/* serviceList is a class with a dropdown list for the second li */
 
+
+/* serviceList is a class with a dropdown list for the second li */
 
 .serviceContainer {
     overflow: hidden;
 }
 
 .serviceList {
-    /* display: none !important; */
+    display: none;
     position: fixed;
     background-color: white;
     max-width: 220px;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
     text-align: left;
     margin-left: 4rem;
 }
 
 
-/* #serviceTitle:hover + .serviceList {
-    display: block !important;
-    display: flex !important;
-}  */
+#serviceTitle:hover + .serviceList {
+    display: flex;
+    flex-direction: column;
+} 
 /* when we want only to show the list by hover not clicking on the options */
 
 
