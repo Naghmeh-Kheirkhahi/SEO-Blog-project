@@ -201,6 +201,12 @@ button:hover {
     color: rgb(62, 166, 98);
 }
 
+
+
+
+
+/* the social media icons part */
+
 .SocialMedia{
     text-align: center;
 }
@@ -211,6 +217,13 @@ button:hover {
     font-size: 2rem;
 }
 
+.SocialMedia i:hover {
+    font-size: 2.3rem;
+    transition: 300ms ease-in-out;
+}
+
+
+
 #facebook { color: rgb(43, 43, 205);}
 
 #twitter {color: black;}
@@ -220,11 +233,6 @@ button:hover {
 #whatsapp {color: rgb(46, 192, 97);}
 
 #email {color: rgb(130, 130, 130);}
-
-
-
-/* the social media icons part */
-
 
 
 
